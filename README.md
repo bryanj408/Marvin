@@ -1,2 +1,2 @@
 # chatBuddy
- Creating my own chatGPT "dumbed-down"
+ Creating my own "dumbed-down" chatGPT 
