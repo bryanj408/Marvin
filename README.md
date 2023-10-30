@@ -1,5 +1,5 @@
 # chatBuddy
- Creating my own "dumbed-down" chatGPT
+ Creating my own "dumbed-down" chatGPT/chatBuddy
 
  *This will be a continuely updated README.md with notes/updates/changes to any existing code or ideas*
 
