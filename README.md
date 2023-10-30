@@ -6,11 +6,12 @@
  **THINGS TO DO**
  
  Build the HTML layout that will interact with vanilla JavaScript and CSS
- ```
- Incorporate main color/theme of the DOM
- Color scheme
- AI modal
- Space for AI modal to talk back to you
- Input field
- Submit button
- ```
+```
+Incorporate main color/theme of the DOM
+Color scheme
+AI modal
+Space for AI modal to talk back to you
+Three auto-generated answers depending on what is asked
+setTimeout feature between initial page load and questions
+Loading wheel on first load
+```
