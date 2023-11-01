@@ -1,17 +1,30 @@
+/*
+CMD + / comments out line of code
+*/
+
 const body = document.querySelector("body");
-
-//populates welcome message after initial load of browser
-//typingEffect() iterates through text string and uses setTimeout to pause between characters 
-
 const welcomeMessage = document.querySelector("div");
 const text = "Welcome to your new chatBuddy!";
+const text2 = "I want to know how you're feeling today, so I'm going to ask you a few question";
+
+/**
+ * function typingEffect()
+ * iterates through text constant to type out welcome message
+ * @param {string} element 
+ * @param {string} text 
+ * @param {integer} i 
+ * @returns 
+ */
 const typingEffect = (element, text, i = 0) => {
     element.textContent += text[i];
     
     if (i === text.length - 1) {
         return;
     }
-    setTimeout(() => typingEffect(welcomeMessage, text, i + 1), 50);
+    setTimeout(() => { 
+        typingEffect(welcomeMessage, text, i + 1)
+    }, 50);
+   
 }
 typingEffect(welcomeMessage, text);
 
