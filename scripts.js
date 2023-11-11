@@ -5,8 +5,8 @@ const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
 
 const helloEarth = ["Hello, my operating name is Marvin.", 
-                    "Our species have observed you for over a milenia", 
-                    "and I want to ask you a few questions...", 
+                    "Our species have observed you for over an Eon", 
+                    "and we want to ask you a few questions...", 
                     "We're trying to better understand the human race.", 
                     "So for in the name of what you humans call, Science...",
                     "Here are a few questions we have left."];
@@ -22,7 +22,10 @@ const questions = [
     { q: "What is the Answer to the ultimate question of Life, the universe, and everything?", a: ["Infinity", 42, "Football"]}
 ];
 
-const goodbyeEarth = ["By the way, the answer to question 1 is definitely the Grizzly Bear."]
+const goodbyeEarth = ["By the way, after watching your species for some time now, the answer to #1 is definitely the Grizzly Bear.",
+                      "And the answer to #4 is definitely GIF",
+                      "Oh and for the record, Deep Thought was right... the answer to all things is 42",
+                      "I'll have to say goodbye for now"];
 
 //types out messages grabbed from messages[] with timeout between characters in array of strings
 const typingText = (elem, txt, done = () => {}) => {
@@ -73,6 +76,13 @@ const processQuestions = (questions, index = 0) => {
     //if there are no more questions
     if (index >= questions.length) {
         console.log("All questions complete");
+        setTimeout(() => {
+            typingArray(welcomeMessage, goodbyeEarth, () => { 
+                setTimeout(() => {
+                    welcomeMessage.textContent = "";
+                }, 2000);
+            });
+        }, 2000);
         return;
     }
     //get the current question according to the index
@@ -93,12 +103,7 @@ setTimeout(() => {
     processQuestions(questions);
 }, 22500);
 
-typingArray(welcomeMessage, goodbyeEarth, () => {
-    console.log("All Done!"); 
-    setTimeout(() => {
-        welcomeMessage.textContent = "";
-    }, 2000);
-});
+
 
 
 
