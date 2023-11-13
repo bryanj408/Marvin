@@ -1,14 +1,90 @@
-.buttonOne-class {
-    height: 30px;
-    width: 100px;
+body {
+    background-color: black;
+    color: white;
 }
 
-.buttonTwo-class {
-    height: 30px;
-    width: 100px;
+.img-container {
+        height: 200px;
+        padding: 75px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        -webkit-animation: breathing 4.5s ease-out;
+        animation: breathing 4.5s ease-out;
+    infinite normal;
+        animation: breathing 4.5s ease-out infinite;
+    normal;
+        -webkit-font-smoothing: antialiased;
 }
 
-.buttonThree-class {
-    height: 30px;
-    width: 100px;
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    height: 10px;
 }
+
+.answers {
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+} 
+
+.button {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 05px;
+    padding: 10px 50px;
+    font-size: 15px;
+}
+
+@-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    25% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    60% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  
+    100% {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  
