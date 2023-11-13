@@ -4,11 +4,12 @@ const welcomeMessage = document.querySelector(".welcome-message");
 const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
 
-const helloEarth = ["Hello, my operating name is Marvin.", 
-                    "Our species have observed you for over an Eon", 
+const helloEarth = ["Hello, World!",
+                    "My operating name is Marvin.", 
+                    "Our species have observed your planet for over an Eon", 
                     "and we want to ask you a few questions...", 
                     "We're trying to better understand the human race.", 
-                    "So for in the name of what you humans call, Science...",
+                    "In the name of what you humans call, Science...",
                     "Here are a few questions we have left."];
 
 const questions = [
@@ -23,8 +24,8 @@ const questions = [
 ];
 
 const goodbyeEarth = ["By the way, after watching your species for some time now, the answer to #1 is definitely the Grizzly Bear.",
-                      "And the answer to #4 is definitely GIF",
-                      "Oh and for the record, Deep Thought was right... the answer to all things is 42",
+                      "And the answer to #4 is GIF",
+                      "Oh and for the record, Deep Thought was right...the answer to all things is 42",
                       "I'll have to say goodbye for now"];
 
 //types out messages grabbed from messages[] with timeout between characters in array of strings
@@ -66,6 +67,7 @@ typingArray(welcomeMessage, helloEarth, () => {
 const createAnswerButtons = (answers, callback) => {
     answers.forEach((answer) => {
         const button = document.createElement("button");
+        button.classList.add("button");
         button.textContent = answer; 
         button.onclick = callback;
         answerElement.append(button);
@@ -101,27 +103,4 @@ const processQuestions = (questions, index = 0) => {
 };
 setTimeout(() => {
     processQuestions(questions);
-}, 22500);
-
-
-
-
-
-
-
-
-
-
-//Old code that may be reused
-
-// let buttonOne = document.createElement("button");
-// buttonOne.classList.add("buttonOne-class");
-// buttonOne.setAttribute("id", "button");
-// buttonOne.textContent = ""
-// body.append(buttonOne);
-
-// let buttonTwo = document.createElement("button");
-// buttonTwo.classList.add("buttonTwo-class");
-// buttonTwo.setAttribute("id", "button");
-// buttonTwo.textContent = ""
-// body.append(buttonTwo);
+}, 23500);
