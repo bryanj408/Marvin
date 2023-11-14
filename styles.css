@@ -58,6 +58,7 @@ body {
     padding: 10px 50px;
     font-size: 15px;
     opacity: 70%;
+    border-color: white;
     border-radius: 8px;
     transition-duration: .5s;
 }
