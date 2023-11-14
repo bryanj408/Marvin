@@ -3,13 +3,16 @@
 const welcomeMessage = document.querySelector(".welcome-message");
 const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
+const img = document.querySelector("img");
+img.classList.toggle("img-gone");
 
-const helloEarth = ["Hello, World!",
+
+const helloEarth = ["Hello, World.",
                     "My operating name is Marvin.", 
                     "Our species have observed your planet for over an Eon", 
-                    "and we want to ask you a few questions...", 
+                    "We want to ask you a few questions...", 
                     "We're trying to better understand the human race.", 
-                    "In the name of what you humans call, Science...",
+                    "In the name of what you call, Science...",
                     "Here are a few questions we have left."];
 
 const questions = [
@@ -25,8 +28,9 @@ const questions = [
 
 const goodbyeEarth = ["By the way, after watching your species for some time now, the answer to #1 is definitely the Grizzly Bear.",
                       "And the answer to #4 is GIF",
-                      "Oh and for the record, Deep Thought was right...the answer to all things is 42",
-                      "I'll have to say goodbye for now"];
+                      "Oh and for the record, Deep Thought was right...the answer to all things is in fact 42",
+                      "That is all for now.",
+                      "Goodbye, World."];
 
 //types out messages grabbed from messages[] with timeout between characters in array of strings
 const typingText = (elem, txt, done = () => {}) => {
@@ -37,7 +41,7 @@ const typingText = (elem, txt, done = () => {}) => {
         if(i === txt.length - 1) 
         return done();
         i += 1;
-        setTimeout(next, 30);
+        setTimeout(next, 40);
     };
     next(); //Start
 };
@@ -56,12 +60,15 @@ const typingArray = (elem, arr, done = () => {}) => {
     next(); //Start
 }
 // //calls typingArray() and clears final intro messages before questions
-typingArray(welcomeMessage, helloEarth, () => {
-    console.log("All Done!"); 
-    setTimeout(() => {
-        welcomeMessage.textContent = "";
-    }, 2000);
-});
+    typingArray(welcomeMessage, helloEarth, () => {
+        console.log("All Done!"); 
+        setTimeout(() => {
+            welcomeMessage.textContent = "";
+        }, 2000);
+    });
+    
+    
+
 
 //creates the buttons in the .answers area according to the passed answers
 const createAnswerButtons = (answers, callback) => {
@@ -83,6 +90,7 @@ const processQuestions = (questions, index = 0) => {
                 setTimeout(() => {
                     welcomeMessage.textContent = "";
                 }, 2000);
+            img.classList.toggle("img-gone");
             });
         }, 2000);
         return;
@@ -103,4 +111,5 @@ const processQuestions = (questions, index = 0) => {
 };
 setTimeout(() => {
     processQuestions(questions);
-}, 23500);
+}, 25000);
+// 27000
