@@ -1,26 +1,44 @@
 body {
     background-color: black;
     color: white;
+    font-family: "raleway";
+    font-size: 18px;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .img-container {
-        height: 200px;
-        padding: 75px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        -webkit-animation: breathing 4.5s ease-out;
-        animation: breathing 4.5s ease-out;
-    infinite normal;
-        animation: breathing 4.5s ease-out infinite;
-    normal;
-        -webkit-font-smoothing: antialiased;
+    height: 200px;
+    padding-top: 150px;
+    display: flex;
+    opacity: 65%;
+    justify-content: center;
+    position: relative;
+    -webkit-animation: breathing 4.5s ease-out ease-out infinite normal;
+    animation: breathing 4.5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.img-gone {
+    transition: 4s ease-out;
+    opacity: 0%;
+}
+
+.img-here {
+    transition: 5s ease-in;
+    
 }
 
 .container {
     display: flex;
     justify-content: center;
     position: relative;
+    padding-top: 20px;
     height: 50px;
     height: 10px;
 }
@@ -35,9 +53,19 @@ body {
 .button {
     display: inline-block;
     text-align: center;
+    font-family: "raleway";
     margin: 0px 05px;
     padding: 10px 50px;
     font-size: 15px;
+    opacity: 70%;
+    border-radius: 8px;
+    transition-duration: .5s;
+}
+
+button:hover {
+    opacity: 90%;
+    border-color: black;
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 @-webkit-keyframes breathing {
