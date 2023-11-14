@@ -64,7 +64,7 @@ body {
 
 button:hover {
     opacity: 90%;
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
 }
 
 @-webkit-keyframes breathing {
