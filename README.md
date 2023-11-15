@@ -1,5 +1,4 @@
 # Marvin
-### Creating my own "dumbed-down" chatGPT/chatBuddy
 An AI alien named "Marvin" that is trying to better understand the human race. The purpose of this project was to get more comfortable interacting between JavaScript, HTML, and CSS. 
 This project impliments:
 ```
