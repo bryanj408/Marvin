@@ -17,4 +17,4 @@ This project impliments:
 -build a function that collects the data from each answer and displays unique response
 -format for phone/tablet/computer
 -build out a way for the background video to loop seamlessly
-```
+
