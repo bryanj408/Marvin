@@ -26,7 +26,7 @@ const questions = [
     { q: "What is the Answer to the ultimate question of Life, the universe, and everything?", a: ["Infinity", 42, "Football"]}
 ];
 
-const goodbyeEarth = ["By the way, after watching your species for some time now, the answer to #1 is definitely the Grizzly Bear.",
+const goodbyeEarth = ["By the way, after watching your species for some time now, the answer to the first question is definitely the Grizzly Bear.",
                       "And the answer to #4 is GIF",
                       "Oh and for the record, Deep Thought was right...the answer to all things is in fact 42",
                       "That is all for now.",
@@ -111,5 +111,5 @@ const processQuestions = (questions, index = 0) => {
 };
 setTimeout(() => {
     processQuestions(questions);
-}, 26500);
+}, 27000);
 // 27000

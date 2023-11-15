@@ -37,6 +37,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    text-align: center;
     position: relative;
     padding-top: 20px;
     height: 50px;
@@ -115,4 +116,12 @@ button:hover {
       transform: scale(0.9);
     }
   }
-  
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .button {
+        margin-bottom: 10px;
+    }
+    .container {
+        margin-bottom: 10px;
+    }
+  }
