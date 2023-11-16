@@ -1,11 +1,14 @@
 //ternary operator  everydayBackpack.lidOpen ? "open" : "closed"
-
 const welcomeMessage = document.querySelector(".welcome-message");
 const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
 const img = document.querySelector("img");
+// img.classList.toggle("img-default");
 img.classList.toggle("img-gone");
 
+setTimeout(() => {
+    img.classList.toggle("img-here");
+}, 400);
 
 const helloEarth = ["Hello, World.",
                     "My operating name is Marvin.", 
@@ -60,12 +63,14 @@ const typingArray = (elem, arr, done = () => {}) => {
     next(); //Start
 }
 // //calls typingArray() and clears final intro messages before questions
+setTimeout(() => {
     typingArray(welcomeMessage, helloEarth, () => {
         console.log("All Done!"); 
         setTimeout(() => {
             welcomeMessage.textContent = "";
         }, 2000);
     });
+}, 2000);
     
     
 
