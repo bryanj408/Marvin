@@ -115,5 +115,5 @@ const processQuestions = (questions, index = 0) => {
 };
 setTimeout(() => {
     processQuestions(questions);
-}, 27000);
+}, 28500);
 // 27000
