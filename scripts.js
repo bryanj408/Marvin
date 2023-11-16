@@ -3,8 +3,7 @@ const welcomeMessage = document.querySelector(".welcome-message");
 const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
 const img = document.querySelector("img");
-// img.classList.toggle("img-default");
-img.classList.toggle("img-gone");
+// img.classList.toggle("img-gone");
 
 setTimeout(() => {
     img.classList.toggle("img-here");
