@@ -3,19 +3,19 @@ const welcomeMessage = document.querySelector(".welcome-message");
 const questionElement = document.querySelector(".questions");
 const answerElement = document.querySelector(".answers");
 const img = document.querySelector("img");
-// img.classList.toggle("img-gone");
+// img.classList.toggle("img-here");
 
 setTimeout(() => {
     img.classList.toggle("img-here");
 }, 400);
 
-const helloEarth = ["Hello, World."];
-                    // "My operating name is Marvin.", 
-                    // "Our species have observed your planet for over an Eon", 
-                    // "We want to ask you a few questions...", 
-                    // "We're trying to better understand the human race.", 
-                    // "In the name of what you call, Science...",
-                    // "Here are a few questions we have left."];
+const helloEarth = ["Hello, World.",
+                    "My operating name is Marvin.", 
+                    "Our species have observed your planet for over an Eon", 
+                    "We want to ask you a few questions...", 
+                    "We're trying to better understand the human race.", 
+                    "In the name of what you call, Science...",
+                    "Here are a few questions we have left."];
 
 const questions = [
     { q: "Who would win in a fight: A Gorilla or a Grizzly Bear?", a: ["Gorilla", "Grizzly Bear"]},
@@ -115,5 +115,5 @@ const processQuestions = (questions, index = 0) => {
 };
 setTimeout(() => {
     processQuestions(questions);
-}, 2000);
+}, 27000);
 // 27000
